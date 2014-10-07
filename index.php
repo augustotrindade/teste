@@ -1,5 +1,7 @@
 <?php
 include './scripts/config.php';
+include './scripts/restrito.php';
 
-echo 'teste'
+$tbs->LoadTemplate($doc_root.'/templates/index.html');
+$tbs->Show();
 ?>
