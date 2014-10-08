@@ -11,7 +11,6 @@ if(isset($_POST)){
 	}
 }
 
-
 $tbs->LoadTemplate($doc_root.'/templates/login.html');
 $tbs->Show();
 ?>
