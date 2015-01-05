@@ -1,7 +1,7 @@
 <?php
 include './scripts/config.php';
 
-if(isset($_POST)){
+if(isset($_POST) && !empty($_POST)){
 // 	$m->adb->usuario->insert(array('_id'=>uniqid('user_'),'login'=>$_POST['login'],'senha'=>md5($_POST['senha']),'nome'=>"Admin"));
 	$user = $m->adb->usuario->findOne(array('login'=>$_POST['login'],'senha'=>md5($_POST['senha'])));
 	if($user){
